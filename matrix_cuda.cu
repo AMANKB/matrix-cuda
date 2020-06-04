@@ -68,7 +68,7 @@ Note:
 return: none
 *********************************************************************
 */
-__global__ void gpu_square_matrix_mult(int *d_a, int *d_b, int *d_result, int n) 
+__global__ void MatrixDotProdut(int *d_a, int *d_b, int *d_result, int n) 
 {
     __shared__ int tile_a[BLOCK_SIZE][BLOCK_SIZE];
     __shared__ int tile_b[BLOCK_SIZE][BLOCK_SIZE];
